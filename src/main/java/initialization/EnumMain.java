@@ -1,4 +1,4 @@
-package enumerate;
+package initialization;
 
 class EnumMain {
     public enum Spiciness {
