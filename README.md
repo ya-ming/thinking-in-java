@@ -10,4 +10,10 @@ Simple functionalities.
 Initialization related.
 
 ## util
-utility classes.
+Utility classes such as Print
+
+## reusing
+Basic example of inherit and member variable initialization; final/blank final;
+
+## polymorphism
+Covariant return. Overriding function in the extended class can return one of the inherited type of the parent class.
