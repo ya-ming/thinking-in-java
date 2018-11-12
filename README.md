@@ -20,3 +20,6 @@ Covariant return. Overriding function in the extended class can return one of th
 
 ## innerclass
 Inner class releated examples. 
+
+## simple containers
+![Simple Container Taxonomy](https://github.com/ya-ming/thinking-in-java/raw/master/files/simple-container-taxonomy.jpg)
