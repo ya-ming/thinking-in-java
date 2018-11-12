@@ -1,6 +1,6 @@
 package innerclass;
 
-import static util.Print.print;
+import static net.mindview.util.Print.print;
 
 public class DotThis {
     void f() { print("DotThis.f()"); }

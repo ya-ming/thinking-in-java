@@ -1,5 +1,5 @@
 package access;
-import static util.Print.*;
+import static net.mindview.util.Print.*;
 
 public class PrintTest {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class PrintTest {
         print(100);
         print(100L);
         print(3.14159);
-        print("%s%d\n", "C style printf ", 100);
+        printf("%s%d\n", "C style printf ", 100);
         print("end");
     }
 }

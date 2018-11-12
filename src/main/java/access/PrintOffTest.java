@@ -1,6 +1,6 @@
 package access;
 
-import static util.PrintOff.*;
+import static net.mindview.util.PrintOff.*;
 
 public class PrintOffTest {
     public static void main(String[] args) {

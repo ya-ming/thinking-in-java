@@ -2,7 +2,7 @@ package interfaces.music5;
 
 import interfaces.music.Note;
 
-import static util.Print.print;
+import static net.mindview.util.Print.*;
 
 interface Instrument {
     int VALUE = 5;

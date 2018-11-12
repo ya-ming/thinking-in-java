@@ -1,6 +1,6 @@
 package reusing;
 
-import static util.Print.print;
+import static net.mindview.util.Print.print;
 
 class WaterSource {
     private String s;

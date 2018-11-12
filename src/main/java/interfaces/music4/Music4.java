@@ -2,7 +2,7 @@ package interfaces.music4;
 
 import interfaces.music.Note;
 
-import static util.Print.print;
+import static net.mindview.util.Print.print;
 
 abstract class Instrument {
     private int i;

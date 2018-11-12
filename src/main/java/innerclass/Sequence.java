@@ -1,6 +1,6 @@
 package innerclass;
 
-import static util.Print.printnb;
+import static net.mindview.util.Print.*;
 
 interface Selector {
     boolean end();

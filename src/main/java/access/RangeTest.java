@@ -1,7 +1,7 @@
 package access;
 
-import static util.Print.print;
-import static util.Range.*;
+import static net.mindview.util.Print.print;
+import static net.mindview.util.Range.*;
 
 public class RangeTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package util;
+package net.mindview.util;
 
 public class Range {
     // Produce a sequence [0..n)
