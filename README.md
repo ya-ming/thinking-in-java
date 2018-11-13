@@ -23,3 +23,6 @@ Inner class releated examples.
 
 ## simple containers
 ![Simple Container Taxonomy](https://github.com/ya-ming/thinking-in-java/raw/master/files/simple-container-taxonomy.jpg)
+
+## Exceptions
+![Exceptions](https://github.com/ya-ming/thinking-in-java/raw/master/files/exception.jpg)
