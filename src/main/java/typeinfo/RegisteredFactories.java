@@ -14,7 +14,7 @@ class Part {
             new ArrayList<Factory<? extends Part>>();
 
     static {
-        // Collections.addAll() gives an "unchecked generic
+        // Collections.addAll() gives an "unchecked generics
         // array creation ... for varargs parameter" warning.
         partFactories.add(new FuelFilter.Factory());
         partFactories.add(new AirFilter.Factory());

@@ -13,7 +13,7 @@ class Part2 {
             new ArrayList<>();
 
     static {
-        // Collections.addAll() gives an "unchecked generic
+        // Collections.addAll() gives an "unchecked generics
         // array creation ... for varargs parameter" warning.
         partClasses.add(FuelFilter.class);
         partClasses.add(AirFilter.class);
