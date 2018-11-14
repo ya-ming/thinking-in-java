@@ -25,7 +25,7 @@ class Cleanser {
     }
 }
 
-public class Detergent extends Cleanser{
+public class Detergent extends Cleanser {
     @Override
     public void scrub() {
         append(" Detergent.scrub()");

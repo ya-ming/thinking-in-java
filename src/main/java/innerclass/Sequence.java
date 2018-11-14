@@ -4,7 +4,9 @@ import static net.mindview.util.Print.*;
 
 interface Selector {
     boolean end();
+
     Object current();
+
     void next();
 }
 
@@ -24,6 +26,7 @@ public class Sequence {
 
     private class SequenceSelector implements Selector {
         private int i = 0;
+
         @Override
         public boolean end() {
             return i == items.length;
@@ -49,11 +52,11 @@ public class Sequence {
         Sequence sequence = new Sequence(10);
         Selector selector = sequence.selector();
 
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             sequence.add(i);
         }
 
-        while(!selector.end()) {
+        while (!selector.end()) {
             printnb(selector.current() + " ");
             selector.next();
         }

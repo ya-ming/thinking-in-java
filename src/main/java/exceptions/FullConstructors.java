@@ -1,8 +1,12 @@
 package exceptions;
 
 class MyException extends Exception {
-    public MyException() {}
-    public MyException(String msg) {super(msg);}
+    public MyException() {
+    }
+
+    public MyException(String msg) {
+        super(msg);
+    }
 }
 
 public class FullConstructors {

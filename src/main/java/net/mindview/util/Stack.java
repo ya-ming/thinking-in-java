@@ -8,6 +8,7 @@ public class Stack<T> {
     public void push(T v) {
         storage.addFirst(v);
     }
+
     public T peek() {
         return storage.peek();
     }

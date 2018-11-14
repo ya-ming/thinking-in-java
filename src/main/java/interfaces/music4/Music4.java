@@ -6,14 +6,17 @@ import static net.mindview.util.Print.print;
 
 abstract class Instrument {
     private int i;
+
     public abstract void play(Note n);
+
     public String what() {
         return "Instrument";
     }
+
     public abstract void adjust();
 }
 
-class Wind extends Instrument{
+class Wind extends Instrument {
     @Override
     public void play(Note n) {
         print("Wind.play() " + n);
@@ -25,7 +28,7 @@ class Wind extends Instrument{
     }
 }
 
-class Percussion extends Instrument{
+class Percussion extends Instrument {
     @Override
     public void play(Note n) {
         print("Percussion.play() " + n);
@@ -43,8 +46,8 @@ public class Music4 {
     }
 
     static void tuneAll(Instrument[] e) {
-        for (Instrument i:e
-             ) {
+        for (Instrument i : e
+                ) {
             tune(i);
         }
     }

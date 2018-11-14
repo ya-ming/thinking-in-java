@@ -3,7 +3,9 @@ package innerclass;
 import static net.mindview.util.Print.print;
 
 public class DotThis {
-    void f() { print("DotThis.f()"); }
+    void f() {
+        print("DotThis.f()");
+    }
 
     public class Inner {
         public DotThis outer() {

@@ -1,7 +1,9 @@
 package holding;
 
 import typeinfo.pets.*;
+
 import java.util.*;
+
 import static net.mindview.util.Print.*;
 
 public class MapOfList {
@@ -14,7 +16,7 @@ public class MapOfList {
 
     public static void main(String[] args) {
         print(petPeople.keySet());
-        for (Person person: petPeople.keySet()) {
+        for (Person person : petPeople.keySet()) {
             print(person + " has:");
             for (Pet pet : petPeople.get(person)) {
                 print("     " + pet);

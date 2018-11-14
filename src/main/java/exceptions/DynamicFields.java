@@ -2,14 +2,16 @@ package exceptions;
 
 import static net.mindview.util.Print.*;
 
-class DynamicFieldsException extends Exception {}
+class DynamicFieldsException extends Exception {
+}
 
 public class DynamicFields {
     private Object[][] fields;
+
     public DynamicFields(int initialSize) {
         fields = new Object[initialSize][2];
         for (int i = 0; i < initialSize; i++) {
-            fields[i] = new Object[] {null, null};
+            fields[i] = new Object[]{null, null};
         }
     }
 
@@ -42,7 +44,7 @@ public class DynamicFields {
     }
 
     private int makeField(String id) {
-        for (int i = 0; i < fields.length; i++){
+        for (int i = 0; i < fields.length; i++) {
             if (fields[i][0] == null) {
                 fields[i][0] = id;
                 return i;
@@ -54,7 +56,7 @@ public class DynamicFields {
             tmp[i] = fields[i];
         }
         for (int i = fields.length; i < tmp.length; i++) {
-            tmp[i] = new Object[] { null, null };
+            tmp[i] = new Object[]{null, null};
         }
         fields = tmp;
         return makeField(id);
@@ -65,24 +67,24 @@ public class DynamicFields {
     }
 
     public Object setField(String id, Object value)
-        throws DynamicFieldsException {
-            if (value == null) {
-                DynamicFieldsException dfe = new DynamicFieldsException();
-                dfe.initCause(new NullPointerException());
-                throw dfe;
-            }
-            int fieldNumber = hasField(id);
-            if (fieldNumber == -1) {
-                fieldNumber = makeField(id);
-            }
-            Object result = null;
-            try {
-                result = getField(id);
-            } catch (NoSuchFieldException e) {
-                throw new RuntimeException(e);
-            }
-            fields[fieldNumber][1] = value;
-            return result;
+            throws DynamicFieldsException {
+        if (value == null) {
+            DynamicFieldsException dfe = new DynamicFieldsException();
+            dfe.initCause(new NullPointerException());
+            throw dfe;
+        }
+        int fieldNumber = hasField(id);
+        if (fieldNumber == -1) {
+            fieldNumber = makeField(id);
+        }
+        Object result = null;
+        try {
+            result = getField(id);
+        } catch (NoSuchFieldException e) {
+            throw new RuntimeException(e);
+        }
+        fields[fieldNumber][1] = value;
+        return result;
     }
 
     public static void main(String[] args) {

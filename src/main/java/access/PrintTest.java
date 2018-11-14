@@ -1,4 +1,5 @@
 package access;
+
 import static net.mindview.util.Print.*;
 
 public class PrintTest {

@@ -6,7 +6,9 @@ import static net.mindview.util.Print.*;
 
 interface Instrument {
     int VALUE = 5;
+
     void play(Note n);
+
     void adjust();
 }
 
@@ -40,8 +42,8 @@ public class Music5 {
     }
 
     static void tuneAll(Instrument[] e) {
-        for (Instrument i:e
-             ) {
+        for (Instrument i : e
+                ) {
             tune(i);
         }
     }

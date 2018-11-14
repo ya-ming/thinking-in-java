@@ -1,16 +1,28 @@
 package polymorphism;
 
 class Useful {
-    public void f() {}
-    public void g() {}
+    public void f() {
+    }
+
+    public void g() {
+    }
 }
 
 class MoreUseful extends Useful {
-    public void f() {}
-    public void g() {}
-    public void u() {}
-    public void v() {}
-    public void w() {}
+    public void f() {
+    }
+
+    public void g() {
+    }
+
+    public void u() {
+    }
+
+    public void v() {
+    }
+
+    public void w() {
+    }
 }
 
 public class RTTI {
@@ -24,7 +36,7 @@ public class RTTI {
         x[1].g();
 
         // Downcast/RTTI
-        ((MoreUseful)x[1]).u();
+        ((MoreUseful) x[1]).u();
 
         // Exception thrown
 //        ((MoreUseful)x[0]).u();

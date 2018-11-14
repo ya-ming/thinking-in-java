@@ -5,7 +5,10 @@ import static net.mindview.util.Print.print;
 public class Parcel3 {
     class Contents {
         private int i = 11;
-        public int value() { return i; }
+
+        public int value() {
+            return i;
+        }
     }
 
     class Destination {
@@ -15,7 +18,9 @@ public class Parcel3 {
             this.label = whereTo;
         }
 
-        String readLabel() { return label; }
+        String readLabel() {
+            return label;
+        }
     }
 
     public void ship(String dest) {
@@ -28,5 +33,5 @@ public class Parcel3 {
         Parcel3 p = new Parcel3();
         Parcel3.Contents c = p.new Contents();
         Parcel3.Destination d = p.new Destination("Tasmania");
-}
+    }
 }

@@ -1,12 +1,12 @@
 //: typeinfo/pets/Rat.java
 package typeinfo.pets;
 
-public class Rat extends Rodent {
-    public Rat(String name) {
+public class Gerbil extends Rodent {
+    public Gerbil(String name) {
         super(name);
     }
 
-    public Rat() {
+    public Gerbil() {
         super();
     }
 } ///:~

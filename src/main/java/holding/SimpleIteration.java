@@ -1,7 +1,9 @@
 package holding;
 
 import typeinfo.pets.*;
+
 import java.util.*;
+
 import static net.mindview.util.Print.*;
 
 public class SimpleIteration {
@@ -9,7 +11,7 @@ public class SimpleIteration {
         List<Pet> pets = Pets.arrayList(12);
 
         Iterator<Pet> it = pets.iterator();
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             Pet p = it.next();
             printnb(p.id() + ":" + p + " ");
         }
