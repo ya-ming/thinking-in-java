@@ -20,6 +20,8 @@ class RealObject implements Interface {
 
 class SimpleProxy implements Interface {
     private Interface proxied;
+    private static int doCount = 0;
+    private static int somethingCount = 0;
 
     public SimpleProxy(Interface proxied) {
         this.proxied = proxied;
@@ -27,11 +29,13 @@ class SimpleProxy implements Interface {
 
     public void doSomething() {
         print("SimpleProxy doSomething");
+        printf("SimpleProxy doSomething called %d times", ++doCount);
         proxied.doSomething();
     }
 
     public void somethingElse(String arg) {
         print("SimpleProxy somethingElse " + arg);
+        printf("SimpleProxy somethingElse called %d times", ++somethingCount);
         proxied.somethingElse(arg);
     }
 }

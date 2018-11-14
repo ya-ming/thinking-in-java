@@ -2,6 +2,10 @@
 // Testing class Class.
 package typeinfo.toys;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 import static net.mindview.util.Print.*;
 
 interface HasBatteries {
@@ -62,6 +66,35 @@ public class ToyTest {
             System.exit(1);
         }
         printInfo(obj.getClass());
+
+        print();
+        try {
+            Class<?> cReflect = Class.forName("typeinfo.toys.Toy");
+            Method[] methods = cReflect.getMethods();
+            Constructor[] ctors = cReflect.getConstructors();
+
+            for (Method method : methods) {
+                print(method);
+            }
+            for (Constructor ctor : ctors) {
+                print(ctor);
+            }
+
+            try {
+                cReflect.getDeclaredConstructor(int.class).newInstance(1);
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            }
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 } /* Output:
 Class name: typeinfo.toys.FancyToy is interface? [false]

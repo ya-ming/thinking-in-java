@@ -26,3 +26,6 @@ Inner class releated examples.
 
 ## Exceptions
 ![Exceptions](https://github.com/ya-ming/thinking-in-java/raw/master/files/exception.jpg)
+
+## Reflection
+![Reflection](https://github.com/ya-ming/thinking-in-java/raw/master/files/reflection-basic.jpg)

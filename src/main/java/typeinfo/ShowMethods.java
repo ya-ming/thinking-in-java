@@ -19,6 +19,7 @@ public class ShowMethods {
 
     public static void main(String[] args) {
         if (args.length < 1) {
+            // java typeinfo.ShowMethods ShowMethods
             print(usage);
             System.exit(0);
         }
