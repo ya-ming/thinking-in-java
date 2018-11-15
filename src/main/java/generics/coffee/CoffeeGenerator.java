@@ -30,11 +30,16 @@ public class CoffeeGenerator implements Generator, Iterable<Coffee> {
 
     class CoffeeIterator implements Iterator<Coffee> {
         int count = size;
-        public boolean hasNext() { return count > 0; }
+
+        public boolean hasNext() {
+            return count > 0;
+        }
+
         public Coffee next() {
             count--;
             return CoffeeGenerator.this.next();
         }
+
         public void remove() {
             throw new UnsupportedOperationException();
         }

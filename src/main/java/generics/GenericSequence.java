@@ -1,10 +1,11 @@
 package generics;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import static net.mindview.util.Print.printnb;
 
-interface Selector <T> {
+interface Selector<T> {
     boolean end();
 
     T current();
@@ -12,7 +13,7 @@ interface Selector <T> {
     void next();
 }
 
-public class GenericSequence <T>{
+public class GenericSequence<T> {
     private List<T> items;
     private int next = 0;
 
