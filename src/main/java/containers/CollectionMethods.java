@@ -43,7 +43,7 @@ public class CollectionMethods {
         print("c.contans(" + val + ") = " + c.contains(val));
         print("c.contansAll(c2) = " + c.containsAll(c2));
 
-        Collection<String> c3 = ((List<String>)c).subList(3, 5);
+        Collection<String> c3 = ((List<String>) c).subList(3, 5);
         c2.retainAll(c3);
         print(c2);
 
