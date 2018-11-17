@@ -31,3 +31,8 @@ Inner class releated examples.
 ![Reflection](https://github.com/ya-ming/thinking-in-java/raw/master/files/reflection-basic.jpg)
 
 ## Array
+
+| Category | Implementation | Thread Safety | Absolute Consistency | Sort | Characteristic |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| List  | LinkedList | No |
+|  | ArrayList | No |
