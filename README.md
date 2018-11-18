@@ -31,6 +31,9 @@ Inner class releated examples.
 ![Reflection](https://github.com/ya-ming/thinking-in-java/raw/master/files/reflection-basic.jpg)
 
 ## Array
+fill(), sort(), equals(), binarySearch()
+
+## Containers
 
 | Category | Implementation | Thread Safety | Absolute Consistency | Sort | Characteristic |
 | ------ | ------ | ------ | ------ | ------ | ------ |
