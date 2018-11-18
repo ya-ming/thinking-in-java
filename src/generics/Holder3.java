@@ -23,7 +23,7 @@ public class Holder3<T> {
         Holder3<Automobile> holder2 = new Holder3(new Automobile());
         Automobile a = holder2.get();
 
-        Holder3<Pet> petHolder = new Holder3<>(new Cat());
+        Holder3<Pet> petHolder = new Holder3<Pet>(new Cat());
         petHolder.set(new Cymric());
     }
 }

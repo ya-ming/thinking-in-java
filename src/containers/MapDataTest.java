@@ -3,7 +3,7 @@ package containers;
 import net.mindview.util.*;
 
 import java.util.Iterator;
-import java.util.function.Consumer;
+// import java.util.function.Consumer;
 
 import static net.mindview.util.Print.print;
 
@@ -31,6 +31,11 @@ class Letters implements Generator<Pair<Integer, String>>, Iterable<Integer> {
             @Override
             public Integer next() {
                 return number++;
+            }
+
+            @Override
+            public void remove() {
+
             }
         };
     }
