@@ -35,6 +35,8 @@ fill(), sort(), equals(), binarySearch()
 
 ## Containers
 
+![Reflection](https://github.com/ya-ming/thinking-in-java/raw/master/files/containers-class-diagram.png)
+
 | Category | Implementation | Thread Safety | Absolute Consistency | Sort | Characteristic |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | List  | LinkedList | No | No | Insertion Order | Fast inserting and removing, slow random accessing |

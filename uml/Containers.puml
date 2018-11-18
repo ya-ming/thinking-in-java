@@ -1,0 +1,75 @@
+@startuml
+interface Iterator
+interface Collection
+interface Map
+interface ListIterator
+interface List
+interface Set
+interface Queue
+interface Deque
+interface SortedSet
+interface SortedMap
+interface NavigableSet
+interface NavigableMap
+interface Enumeration
+
+
+
+Iterator <.. Collection
+Iterator <|-- ListIterator
+
+Collection <.. Map
+Collection <|-- Queue
+Collection <|-- List
+Collection <|-- Set
+
+Collection <|.. AbstractCollection
+
+Queue <|-- Deque
+
+List <|.. AbstractList
+
+AbstractCollection <|-- AbstractList
+AbstractCollection <|-- AbstractSet
+
+Set <|-- SortedSet
+SortedSet <|-- NavigableSet
+
+AbstractList <|-- AbstractSequentialList
+
+Deque <|.. LinkedList
+AbstractSequentialList <|-- LinkedList
+
+AbstractList <|-- ArrayList
+AbstractList <|-- Vector
+Vector <|-- Stack
+
+AbstractSet <|-- HashSet
+AbstractSet <|-- TreeSet
+
+NavigableSet <|.. TreeSet
+
+Map <|-- SortedMap
+Map <|.. AbstractMap
+Map <|.. Hashtable
+
+AbstractMap <|-- TreeMap
+AbstractMap <|-- HashMap
+AbstractMap <|-- WeakHashMap
+
+TreeMap <.. TreeSet
+HashMap <.. HashSet
+
+Directionary <|-- Hashtable
+Enumeration <.. Directionary
+Enumeration <.. Vector
+
+SortedMap <|-- NavigableMap
+NavigableMap <|-- TreeMap
+
+package utilities {
+    Class Arrays
+    Class Collections
+}
+
+@enduml
